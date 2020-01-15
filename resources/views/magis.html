@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAGIS CLOUDS : Home</title>
+  <link rel="shortcut icon" type="image/icon" href="images/magis.png">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Bootstrap -->
+  <!-- <link href="css/bootstrap.css" rel="stylesheet">  -->
+  <link id="switcher" href="css/default-theme.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body >
+<!-- BEGAIN PRELOADER -->
+  <div id="preloader" style="display: none;">
+    <div id="status" style="display: none;">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#" style="display: none;"><i class="fa fa-angle-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+  
+   <!-- BEGIN MENU -->
+   <section class="section1">
+        <div  style="background-color: black ; height:100%; " >
+
+
+
+@include('header')
+
+</div>
+</div>
+</section>
+  <section class="section1">
+
+    <img class="img1" src="/images/back3.jpg"  />
+        <!--    <img class="img3" src="/images/man.gif" /> -->
+                <div class="bin">
+                  <marquee behavior="scroll" direction="left" >
+                    11100000011001010101001011010101010010001010100110101010<br>
+                    01000001010101001011010101010010001010100010100110101010<br>
+                    01100000011001010101001011010101010010001010100110101010<br>
+                    11100001010101001011010101010010001010100010100110101010<br>
+                    10100000011001010101001011010101010010001010100110101010<br>
+                    00100001010101001011010101010010001010100110101010000011<br>
+                  </marquee>
+                </div >
+               <div class="gif">
+                <img  src="/images/bin1.gif" height="100px" width="100px">
+              </div>
+      <!-- <div class="man">
+                <img  src="/images/gif3.gif" height="70px" width="135px">
+              </div> -->
+ 
+
+            <div class="pgm">
+             <marquee  WIDTH=400 HEIGHT=380 behavior="scroll" direction="up" scroll="continuous"
+            data-duplicated='true' >
+
+                   void sort_numbers_ascending(int number[], int count)<br>
+                    {<br>
+                       int temp, i, j, k;<br>
+                       for (j = 0; j < count; ++j)<br>
+                       {<br>
+                          for (k = j + 1; k < count; ++k)<br>
+                          {<br>
+                             if (number[j] > number[k])<br>
+                             {<br>
+                                temp = number[j];<br>
+                                number[j] = number[k];<br>
+                                number[k] = temp;<br>
+                             }<br>
+                          }<br>
+                       }<br>
+                       printf("Numbers in ascending order:\n");<br>
+                       for (i = 0; i < count; ++i)<br>
+                          printf("%d\n", number[i]);<br>
+                    }<br>
+                    void main()<br>
+                    {<br>
+                       int i, count, number[20];<br>
+                     
+                       printf("How many numbers you are gonna enter:");<br>
+                       scanf("%d", &count);<br>
+                       printf("\nEnter the numbers one by one:");<br>
+                       
+                       for (i = 0; i < count; ++i)<br>
+                          scanf("%d", &number[i]);<br>
+                     
+                       sort_numbers_ascending(number, count);<br>
+                    }
+               
+
+             </marquee>
+             </div>
+
+    </section>
+
+
+
+      
+<section class="section2">
+<img class="secglobe" src="images/glo4.gif" >
+
+  <img class="secglobe2" src="images/o.svg" height="400"  >
+
+
+  <div class="secnddiv">
+                  <div class="col-sm-5">
+                     <b class="subhead">
+                     <div class="blinking ">COMPANY NEWS</div></b>
+                    
+                    <div class="marquee">
+                     <marquee behavior="scroll" direction="up"  width=300; height: =600;>
+                         @foreach($tt as $vari)
+                         <b style="font-size: 15px "><i style="color: orange"> {{$vari->heading}}</i>
+                         </b><br><br>
+                         <b style="color: white;">{{$vari->des}}</b><br><br>
+                           @endforeach
+                     </marquee>
+
+                     </div>
+                </div>
+ 
+ 
+    <div class="col-sm-4 ">
+         <b class="subhead">   
+         <div class="blinking">OUR PORTFOLIO</div></b>
+        
+        <div class="marquee">
+         <marquee behavior="scroll" direction="up"  width=350; height: =600;>
+             @foreach($tt2 as $varia)
+             <b style="font-size: 15px "><i style="color: orange"> {{$varia->heading}}</i></b><br>
+    <b style="color:orange;">&#10148;&nbsp;{{$varia->subheading}}</b><br>
+  <b style="color: white;">{{$vari->des}} {{$varia->des}}</b><br>
+               @endforeach
+         </marquee>
+
+         </div>
+    </div>
+  <div class="col-md-3 " >
+         <b class="subhead">
+         <div class="blinking">BLOG</div></b>
+        
+        <div class="marquee">
+         <marquee  behavior="scroll" direction="up"  width=350; height: =600;>
+             @foreach($tt3 as $variab)
+   <b style="font-size: 15px "><i style="color: orange"> {{$variab->heading}}</i></b><br>
+    <b style="color: orange;">&#10148;&nbsp;{{$variab->subheading}}</b><br><b style="color: white">
+{{$variab->des}}<p><br>
+  
+     @endforeach
+         </marquee>
+
+         </div>
+</div>
+</div></section>
+
+<section class="base2">
+  <div class=" col-sm-2">
+  <div class="base22 neon" style="text-decoration:bold underline orange;">
+  COMPANY</div>
+
+<br><br><div class="base22sub">
+Leadership<br>
+News<br>
+Events<br>
+Awards<br>
+Careers<br>
+Contact
+</div>
+</div>
+
+
+
+<div class="col-sm-2">
+  <div class="base22 neon " style="text-decoration:bold underline orange;">
+  CUSTOMERS</div>
+
+<br><br><div class="base22sub">
+Customers<br>
+Case studies<br>
+
+</div>
+</div>
+
+<div class="col-sm-2">
+  <div class="base22 neon" style="text-decoration:bold underline orange;">
+  RESOURCES</div>
+
+<br><br><div class="base22sub">
+Case studies<br>
+Surveys<br>
+Brochures<br>
+Webinars<br>
+Webiner Q&As<br>
+Contact<br>
+News Letter<br>
+White papers<br>
+Data sheets<br>
+Videos<br>
+
+</div>
+</div>
+
+
+<div class="col-sm-3">
+  <div class="base22 neon" style="text-decoration:bold underline orange;">
+  BLOG</div>
+
+<br><br><div class="base22sub">
+
+Corporate Publishing<br>
+Digital Content Production<br>
+Digital Products<br>
+Mobile Devices<br>
+Professional Publishing<br>
+Trade<br>
+</div>
+</div>
+
+
+<div class="col-md-3">
+  <div class="blinking" style="padding-top: 90px ; font-size: 18px;">
+  Sign up to connect with MagisClouds</div>
+<br><div class="signup2"  style="font-size: 10px">
+<input type="email" class="sign"
+autocomplete="off"  name="signup" placeholder="Enter Email">&nbsp;&nbsp;
+<input type="button" class="but" name="but" value="Send">
+</div>
+</div>
+   
+</section>
+
+
+
+
+
+
+
+
+<div class="foott ">
+ <footer id="footer" >
+
+
+
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6 ">
+          <div class="footer-left">
+            <p style="top:1560px;" ><a href="http://www.magiscloudstech.com/"><b style="color: orange">Magis Clouds Technologies</b></a> ,Saphalya Nagar Ln, Kesavadasapuram, Thiruvananthapuram, Kerala, India 695004.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="https://www.facebook.com/magiscloudstech/"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+           </div>
+        </div>
+   
+    </div>
+
+  </footer>
+</div>
+</div>
+
+
+
+          
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</body>
+</html>
